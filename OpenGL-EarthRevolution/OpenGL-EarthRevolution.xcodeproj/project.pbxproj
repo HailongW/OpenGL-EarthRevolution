@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCC3869F25E94E4500229245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC3869E25E94E4500229245 /* Assets.xcassets */; };
+		BCC386A225E94E4500229245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC386A025E94E4500229245 /* Main.storyboard */; };
+		BCC386B025E94E4500229245 /* OpenGL_EarthRevolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC386AF25E94E4500229245 /* OpenGL_EarthRevolutionTests.m */; };
+		BCC386BB25E94E4500229245 /* OpenGL_EarthRevolutionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC386BA25E94E4500229245 /* OpenGL_EarthRevolutionUITests.m */; };
+		BCC386D225E94E6700229245 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCC386D125E94E6700229245 /* main.cpp */; };
+		BCC386E825E94E9C00229245 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC386E725E94E9B00229245 /* OpenGL.framework */; };
+		BCC386EA25E94EAB00229245 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC386E925E94EAB00229245 /* GLUT.framework */; };
+		BCC386EC25E94EBF00229245 /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC386EB25E94EBE00229245 /* libGLTools.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCC386AC25E94E4500229245 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCC3868D25E94E4200229245 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC3869425E94E4200229245;
+			remoteInfo = "OpenGL-EarthRevolution";
+		};
+		BCC386B725E94E4500229245 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCC3868D25E94E4200229245 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC3869425E94E4200229245;
+			remoteInfo = "OpenGL-EarthRevolution";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BCC3869525E94E4200229245 /* OpenGL-EarthRevolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenGL-EarthRevolution.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC3869E25E94E4500229245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCC386A125E94E4500229245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCC386A325E94E4500229245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC386A625E94E4500229245 /* OpenGL_EarthRevolution.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenGL_EarthRevolution.entitlements; sourceTree = "<group>"; };
+		BCC386AB25E94E4500229245 /* OpenGL-EarthRevolutionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenGL-EarthRevolutionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC386AF25E94E4500229245 /* OpenGL_EarthRevolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGL_EarthRevolutionTests.m; sourceTree = "<group>"; };
+		BCC386B125E94E4500229245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC386B625E94E4500229245 /* OpenGL-EarthRevolutionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenGL-EarthRevolutionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC386BA25E94E4500229245 /* OpenGL_EarthRevolutionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGL_EarthRevolutionUITests.m; sourceTree = "<group>"; };
+		BCC386BC25E94E4500229245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC386D125E94E6700229245 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BCC386D725E94E8A00229245 /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		BCC386D825E94E8A00229245 /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		BCC386D925E94E8A00229245 /* GLTriangleBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		BCC386DA25E94E8A00229245 /* GLBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		BCC386DB25E94E8A00229245 /* GLMatrixStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		BCC386DC25E94E8A00229245 /* GLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		BCC386DD25E94E8A00229245 /* GLFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		BCC386DE25E94E8A00229245 /* GLGeometryTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		BCC386DF25E94E8A00229245 /* GLShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		BCC386E025E94E8A00229245 /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		BCC386E225E94E8A00229245 /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		BCC386E325E94E8A00229245 /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		BCC386E425E94E8A00229245 /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		BCC386E525E94E8A00229245 /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		BCC386E725E94E9B00229245 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		BCC386E925E94EAB00229245 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		BCC386EB25E94EBE00229245 /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLTools.a; path = "OpenGL-EarthRevolution/libGLTools.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCC3869225E94E4200229245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC386EC25E94EBF00229245 /* libGLTools.a in Frameworks */,
+				BCC386EA25E94EAB00229245 /* GLUT.framework in Frameworks */,
+				BCC386E825E94E9C00229245 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC386A825E94E4500229245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC386B325E94E4500229245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCC3868C25E94E4200229245 = {
+			isa = PBXGroup;
+			children = (
+				BCC3869725E94E4200229245 /* OpenGL-EarthRevolution */,
+				BCC386AE25E94E4500229245 /* OpenGL-EarthRevolutionTests */,
+				BCC386B925E94E4500229245 /* OpenGL-EarthRevolutionUITests */,
+				BCC3869625E94E4200229245 /* Products */,
+				BCC386E625E94E9B00229245 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCC3869625E94E4200229245 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCC3869525E94E4200229245 /* OpenGL-EarthRevolution.app */,
+				BCC386AB25E94E4500229245 /* OpenGL-EarthRevolutionTests.xctest */,
+				BCC386B625E94E4500229245 /* OpenGL-EarthRevolutionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCC3869725E94E4200229245 /* OpenGL-EarthRevolution */ = {
+			isa = PBXGroup;
+			children = (
+				BCC386D625E94E8A00229245 /* include */,
+				BCC3869E25E94E4500229245 /* Assets.xcassets */,
+				BCC386A025E94E4500229245 /* Main.storyboard */,
+				BCC386A325E94E4500229245 /* Info.plist */,
+				BCC386A625E94E4500229245 /* OpenGL_EarthRevolution.entitlements */,
+				BCC386D125E94E6700229245 /* main.cpp */,
+			);
+			path = "OpenGL-EarthRevolution";
+			sourceTree = "<group>";
+		};
+		BCC386AE25E94E4500229245 /* OpenGL-EarthRevolutionTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCC386AF25E94E4500229245 /* OpenGL_EarthRevolutionTests.m */,
+				BCC386B125E94E4500229245 /* Info.plist */,
+			);
+			path = "OpenGL-EarthRevolutionTests";
+			sourceTree = "<group>";
+		};
+		BCC386B925E94E4500229245 /* OpenGL-EarthRevolutionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCC386BA25E94E4500229245 /* OpenGL_EarthRevolutionUITests.m */,
+				BCC386BC25E94E4500229245 /* Info.plist */,
+			);
+			path = "OpenGL-EarthRevolutionUITests";
+			sourceTree = "<group>";
+		};
+		BCC386D625E94E8A00229245 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				BCC386D725E94E8A00229245 /* GLBatchBase.h */,
+				BCC386D825E94E8A00229245 /* math3d.h */,
+				BCC386D925E94E8A00229245 /* GLTriangleBatch.h */,
+				BCC386DA25E94E8A00229245 /* GLBatch.h */,
+				BCC386DB25E94E8A00229245 /* GLMatrixStack.h */,
+				BCC386DC25E94E8A00229245 /* GLFrame.h */,
+				BCC386DD25E94E8A00229245 /* GLFrustum.h */,
+				BCC386DE25E94E8A00229245 /* GLGeometryTransform.h */,
+				BCC386DF25E94E8A00229245 /* GLShaderManager.h */,
+				BCC386E025E94E8A00229245 /* StopWatch.h */,
+				BCC386E125E94E8A00229245 /* GL */,
+				BCC386E525E94E8A00229245 /* GLTools.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		BCC386E125E94E8A00229245 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				BCC386E225E94E8A00229245 /* glxew.h */,
+				BCC386E325E94E8A00229245 /* wglew.h */,
+				BCC386E425E94E8A00229245 /* glew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		BCC386E625E94E9B00229245 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCC386EB25E94EBE00229245 /* libGLTools.a */,
+				BCC386E925E94EAB00229245 /* GLUT.framework */,
+				BCC386E725E94E9B00229245 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCC3869425E94E4200229245 /* OpenGL-EarthRevolution */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC386BF25E94E4500229245 /* Build configuration list for PBXNativeTarget "OpenGL-EarthRevolution" */;
+			buildPhases = (
+				BCC3869125E94E4200229245 /* Sources */,
+				BCC3869225E94E4200229245 /* Frameworks */,
+				BCC3869325E94E4200229245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenGL-EarthRevolution";
+			productName = "OpenGL-EarthRevolution";
+			productReference = BCC3869525E94E4200229245 /* OpenGL-EarthRevolution.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCC386AA25E94E4500229245 /* OpenGL-EarthRevolutionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC386C225E94E4500229245 /* Build configuration list for PBXNativeTarget "OpenGL-EarthRevolutionTests" */;
+			buildPhases = (
+				BCC386A725E94E4500229245 /* Sources */,
+				BCC386A825E94E4500229245 /* Frameworks */,
+				BCC386A925E94E4500229245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCC386AD25E94E4500229245 /* PBXTargetDependency */,
+			);
+			name = "OpenGL-EarthRevolutionTests";
+			productName = "OpenGL-EarthRevolutionTests";
+			productReference = BCC386AB25E94E4500229245 /* OpenGL-EarthRevolutionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCC386B525E94E4500229245 /* OpenGL-EarthRevolutionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC386C525E94E4500229245 /* Build configuration list for PBXNativeTarget "OpenGL-EarthRevolutionUITests" */;
+			buildPhases = (
+				BCC386B225E94E4500229245 /* Sources */,
+				BCC386B325E94E4500229245 /* Frameworks */,
+				BCC386B425E94E4500229245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCC386B825E94E4500229245 /* PBXTargetDependency */,
+			);
+			name = "OpenGL-EarthRevolutionUITests";
+			productName = "OpenGL-EarthRevolutionUITests";
+			productReference = BCC386B625E94E4500229245 /* OpenGL-EarthRevolutionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCC3868D25E94E4200229245 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					BCC3869425E94E4200229245 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					BCC386AA25E94E4500229245 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = BCC3869425E94E4200229245;
+					};
+					BCC386B525E94E4500229245 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = BCC3869425E94E4200229245;
+					};
+				};
+			};
+			buildConfigurationList = BCC3869025E94E4200229245 /* Build configuration list for PBXProject "OpenGL-EarthRevolution" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCC3868C25E94E4200229245;
+			productRefGroup = BCC3869625E94E4200229245 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCC3869425E94E4200229245 /* OpenGL-EarthRevolution */,
+				BCC386AA25E94E4500229245 /* OpenGL-EarthRevolutionTests */,
+				BCC386B525E94E4500229245 /* OpenGL-EarthRevolutionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCC3869325E94E4200229245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC3869F25E94E4500229245 /* Assets.xcassets in Resources */,
+				BCC386A225E94E4500229245 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC386A925E94E4500229245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC386B425E94E4500229245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCC3869125E94E4200229245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC386D225E94E6700229245 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC386A725E94E4500229245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC386B025E94E4500229245 /* OpenGL_EarthRevolutionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC386B225E94E4500229245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC386BB25E94E4500229245 /* OpenGL_EarthRevolutionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCC386AD25E94E4500229245 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCC3869425E94E4200229245 /* OpenGL-EarthRevolution */;
+			targetProxy = BCC386AC25E94E4500229245 /* PBXContainerItemProxy */;
+		};
+		BCC386B825E94E4500229245 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCC3869425E94E4200229245 /* OpenGL-EarthRevolution */;
+			targetProxy = BCC386B725E94E4500229245 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCC386A025E94E4500229245 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCC386A125E94E4500229245 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCC386BD25E94E4500229245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BCC386BE25E94E4500229245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BCC386C025E94E4500229245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "OpenGL-EarthRevolution/OpenGL_EarthRevolution.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A5CQR3946V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "/Users/wanghailong/GitHubProject/OpenGL-EarthRevolution/OpenGL-EarthRevolution/OpenGL-EarthRevolution/include";
+				INFOPLIST_FILE = "OpenGL-EarthRevolution/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenGL-EarthRevolution",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.whl.ios.OpenGL-EarthRevolution";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BCC386C125E94E4500229245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "OpenGL-EarthRevolution/OpenGL_EarthRevolution.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A5CQR3946V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "/Users/wanghailong/GitHubProject/OpenGL-EarthRevolution/OpenGL-EarthRevolution/OpenGL-EarthRevolution/include";
+				INFOPLIST_FILE = "OpenGL-EarthRevolution/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenGL-EarthRevolution",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.whl.ios.OpenGL-EarthRevolution";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BCC386C325E94E4500229245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A5CQR3946V;
+				INFOPLIST_FILE = "OpenGL-EarthRevolutionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.whl.ios.OpenGL-EarthRevolutionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGL-EarthRevolution.app/Contents/MacOS/OpenGL-EarthRevolution";
+			};
+			name = Debug;
+		};
+		BCC386C425E94E4500229245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A5CQR3946V;
+				INFOPLIST_FILE = "OpenGL-EarthRevolutionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.whl.ios.OpenGL-EarthRevolutionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGL-EarthRevolution.app/Contents/MacOS/OpenGL-EarthRevolution";
+			};
+			name = Release;
+		};
+		BCC386C625E94E4500229245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A5CQR3946V;
+				INFOPLIST_FILE = "OpenGL-EarthRevolutionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.whl.ios.OpenGL-EarthRevolutionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "OpenGL-EarthRevolution";
+			};
+			name = Debug;
+		};
+		BCC386C725E94E4500229245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A5CQR3946V;
+				INFOPLIST_FILE = "OpenGL-EarthRevolutionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.whl.ios.OpenGL-EarthRevolutionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "OpenGL-EarthRevolution";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCC3869025E94E4200229245 /* Build configuration list for PBXProject "OpenGL-EarthRevolution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC386BD25E94E4500229245 /* Debug */,
+				BCC386BE25E94E4500229245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC386BF25E94E4500229245 /* Build configuration list for PBXNativeTarget "OpenGL-EarthRevolution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC386C025E94E4500229245 /* Debug */,
+				BCC386C125E94E4500229245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC386C225E94E4500229245 /* Build configuration list for PBXNativeTarget "OpenGL-EarthRevolutionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC386C325E94E4500229245 /* Debug */,
+				BCC386C425E94E4500229245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC386C525E94E4500229245 /* Build configuration list for PBXNativeTarget "OpenGL-EarthRevolutionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC386C625E94E4500229245 /* Debug */,
+				BCC386C725E94E4500229245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCC3868D25E94E4200229245 /* Project object */;
+}
